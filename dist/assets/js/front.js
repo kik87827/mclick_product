@@ -2425,3 +2425,32 @@ function smtabFunc(){
 		}
 	}
 }
+
+
+
+function gridGalleryFunc(){
+	let window_wid = $(window).width();
+	let gutter_value = 0;
+	$('.grid_gallery_wrap').masonry({
+		itemSelector: '.grid_gallery_item',
+		gutter : 35
+	});
+	resizeAction();
+	$(window).on("resize",function(){
+		if(window_wid !== $(window).width()){
+			resizeAction();
+		}
+		window_wid = $(window).width();
+	});
+
+	function resizeAction(){
+		if($(window).width()>1023){
+			gutter_value = 35;
+		}else{
+			gutter_value = 20;
+		}
+		$('.grid_gallery_wrap').masonry({
+			gutter : gutter_value
+		});
+	}
+}
