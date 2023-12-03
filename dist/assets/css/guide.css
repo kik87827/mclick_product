@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.guide_vitem_wrap{}
+.guide_vitem{padding:55px 0 240px;border-bottom:1px solid #d8d8d8;}
+.guide_vitem:last-of-type{}
+.guide_vitem_title_row{padding:0 44px;}
+.guide_vitem_title{display:flex;align-items: flex-end;font-size:0;line-height:0;gap:10px;font-weight:500;color:#29303d;}
+.guide_type_text{display:inline-block;line-height:1;font-size:36px;}
+.guide_type_unit{display:inline-block;line-height:1;font-size:19px;position:relative;top:-1px;}
+.guide_vitem_content{padding:90px 0 0 0;}
